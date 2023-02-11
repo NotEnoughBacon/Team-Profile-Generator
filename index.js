@@ -29,7 +29,7 @@ function addManager() {
             name: 'officeNumber',
             type: 'input',
             message: 'What is your managers office number?'
-        }
+        } 
     ]).then ( (manager) => {
         listOfTeam.push(new Manager(manager.name, manager.id, manager.email, manager.officeNumber))
         employeeRole()
@@ -52,8 +52,9 @@ function moreEmployees() {
         if (response.addMore === 'yes') {
             employeeRole();
         }
-        else (response.addMore === 'no') {
-            file.writeFile('./browser/index.html', build.buildHTML(listOfTeam), (err) => {
+        if (response.addMore === 'no') {
+            console.log(listOfTeam)
+            file.writeFile('./browser/index.html', build.buildHTML(build.buildCards(listOfTeam)), (err) => {
                 err ? console.error(err) : console.log('Your HTML has been built!')
             })
         }
@@ -146,4 +147,3 @@ function addEngineer() {
 
 addManager();
 
-module.exports = listOfTeam
