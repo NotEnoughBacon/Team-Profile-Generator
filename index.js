@@ -5,8 +5,10 @@ const Engineer = require('./Build-Employee/Build-Engineer');
 const Manager = require('./Build-Employee/Build-Manger');
 const build = require('./Build-HTML/build-html')
 
+//empty array for employees
 let listOfTeam = [];
 
+//adds a manager using .prompt then pushes the manager to the array, calls for new employee
 function addManager() {
 
     inquirer.prompt( [
@@ -36,6 +38,7 @@ function addManager() {
     })
 }
 
+//asks the user if they want to add more employees. if yes, goes to the add employees function, if no, writes an html file using the user inputted data in the array
 function moreEmployees() {
     inquirer.prompt( [
         {
@@ -60,6 +63,7 @@ function moreEmployees() {
     })
 }
 
+//asks the user if its an intern or engineer, calls the function accordingly
 function employeeRole() {
 
     inquirer.prompt( [
@@ -84,6 +88,7 @@ function employeeRole() {
     })
 }
 
+//asks questions for the intern, then calls function for adding more
 function addIntern() {
 
     inquirer.prompt([
@@ -114,6 +119,7 @@ function addIntern() {
     })
 }
 
+//same as intern, questions for engineer
 function addEngineer() {
 
     inquirer.prompt ( [ 

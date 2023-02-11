@@ -13,6 +13,10 @@ clone the repo and "npm i"
 open new terminal on index.js and run "node index.js"
 ## Testing
 running "node test"
+
+## Walkthrough video
+[video](https://drive.google.com/file/d/1M5CcQ2XHZphscunIfVXmhZhtYQ5YmgiD/view)
+
 ## Questions
 
 If you have any questions about this project you can find me on [GitHub](https://github.com/NotEnoughBacon).

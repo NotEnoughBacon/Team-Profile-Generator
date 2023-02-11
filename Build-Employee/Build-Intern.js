@@ -1,7 +1,9 @@
 class Intern {
 
+    //sets constructor
     constructor(name, id, email, school) {
         
+        //throws error if invalid data
         if ((!name) || (!id) || (!email) || (!school)) {
             throw new Error("Intern must have all parameters.")
         }

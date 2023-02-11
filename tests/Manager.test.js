@@ -1,5 +1,6 @@
 const Manager = require('../Build-Employee/Build-Manger')
 
+//tests to check that it works if user input valid and invalid data
 describe('Manager', () => {
     describe('test constructor', () => {
 

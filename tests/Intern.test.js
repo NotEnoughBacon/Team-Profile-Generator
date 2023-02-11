@@ -1,5 +1,6 @@
 const Intern = require('../Build-Employee/Build-Intern')
 
+//tests to check that it works if user input valid and invalid data
 describe ('Intern', () => {
     describe ('test constructor', () => {
 

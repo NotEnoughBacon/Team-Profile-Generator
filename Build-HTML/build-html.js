@@ -4,8 +4,10 @@ const Manager = require('../Build-Employee/Build-Manger');
 
 function buildCards (team) {
 
+    //empty array to store all number of employees
     let array = [];
 
+    //using instanceof to determine if they are a manager, intern or engineer to set the html text accordingly. adds the literal to the array
     for (const employee of team) {
         if (employee instanceof Manager) {
             array += `
@@ -42,6 +44,7 @@ function buildCards (team) {
     return array
 }
 
+//mostly the filler html, then splitting the array and converting to string to make it readable for html
 function buildHTML (cards) {
 return `
     <!DOCTYPE html>
