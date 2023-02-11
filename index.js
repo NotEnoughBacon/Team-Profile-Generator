@@ -53,7 +53,6 @@ function moreEmployees() {
             employeeRole();
         }
         if (response.addMore === 'no') {
-            console.log(listOfTeam)
             file.writeFile('./browser/index.html', build.buildHTML(build.buildCards(listOfTeam)), (err) => {
                 err ? console.error(err) : console.log('Your HTML has been built!')
             })
